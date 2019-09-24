@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Quiz</title>
+	<link rel="icon" type="png" href="css/guessthecolor.png">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/quiz.css">
+
+</head>
+<body>
+	<div class="header">
+		<a href="menu.html">
+			<img src="css/guessthecolor.png" class="center" >
+		</a>
+	</div>
+	<div id="quizContainer" class="container">
+		<div class="title"></div>
+		<div id="question" class="question">WHAT</div>
+		<div class="box">
+			<div id="color" class="color"></div>
+		</div>
+			<label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span></label>
+			<label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
+			<label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span></label>
+			<label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"></span></label>
+		<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
+	</div>
+	<div id="box" class="box2" style="display:none;">
+	<div id="result" class="result" style="display:none;"></div>
+	</div>
+	<div class="box">
+		<button id="redoButton" class="redo-btn" onclick="retakeQuiz();" style="display:none;"></button>
+	</div>
+	<script type="text/javascript" src="js/question.js"></script>
+	<script type="text/javascript" src="js/quiz-script-2.js"></script>
+</body>
+</html>
